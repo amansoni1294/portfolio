@@ -131,6 +131,23 @@
             background: none !important;
             padding: 0 !important;
         }
+        @media(max-width: 786px){
+            .sidebar-header{
+                display:flex;
+                flex-wrap: wrap;
+                justify-content:center !important;
+            }
+            .left-sidebar .sidebar-header .designation{
+                text-align: center !important;
+                max-width:100%  !important;
+            }
+        }
+        @media(min-width: 786px){
+            .sidebar-header{
+                display:flex;
+                flex-wrap: wrap;
+                justify-content:space-between !important;
+            }
     </style>
     <link rel='stylesheet' id='wp-block-library-css' href='wp-includes/css/dist/block-library/style.min.css' media='all' />
     <style id='classic-theme-styles-inline-css'>
@@ -765,7 +782,7 @@
             <div id="smooth-content">
 
                 <div class="left-sidebar">
-                    <div class="sidebar-header d-flex align-items-center justify-content-between">
+                    <div class="sidebar-header d-flex align-items-center">
                         <img src="wp-content/themes/drake/assets/images/amannenwname.png" alt="Logo">
                         <span class="designation">ASP.NET &amp; Full Stack Developer</span>
                     </div>
